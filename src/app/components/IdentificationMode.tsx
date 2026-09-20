@@ -20,6 +20,7 @@ function normalize(s: string) {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "")
+    .replace(/[-_–—/]/g, " ")
     .replace(/[^a-z0-9 ]/g, "")
     .replace(/\s+/g, " ")
     .trim();
@@ -30,8 +31,26 @@ function isMatch(answer: string, target: string) {
   const t = normalize(target);
   if (!a) return false;
   if (a === t) return true;
+
+  // Match target without parenthetical content (e.g., "Human-Computer Interaction" from "Human-Computer Interaction (HCI)")
   const tNoParen = normalize(target.replace(/\(.*?\)/g, ""));
-  if (a === tNoParen) return true;
+  if (tNoParen && a === tNoParen) return true;
+
+  // Match inside parenthetical expressions (e.g., "HCI", "CTM", "CLI", "GUI")
+  const parenMatches = target.match(/\((.*?)\)/g);
+  if (parenMatches) {
+    for (const pm of parenMatches) {
+      const inside = normalize(pm.replace(/[()]/g, ""));
+      if (inside && a === inside) return true;
+    }
+  }
+
+  // Match slash or ampersand alternatives
+  if (target.includes("/") || target.includes("&")) {
+    const parts = target.split(/[/&]/).map(normalize);
+    if (parts.includes(a)) return true;
+  }
+
   return false;
 }
 
