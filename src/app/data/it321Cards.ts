@@ -2,758 +2,552 @@ import type { Flashcard } from "./subjects";
 
 export const it321Cards: Flashcard[] = [
   // ==========================================
-  // I. INTRODUCTION TO HCI & HISTORICAL MILESTONES (PAGE 1)
+  // I. KEY TERMINOLOGY & VOCABULARY
   // ==========================================
   {
     id: 701,
     term: "Human-Computer Interaction (HCI)",
     definition:
-      "A field focused on interfaces between users and computers to establish design; emerged in 1970 as a specialization within computer science.",
+      "A field of study focused on interfaces between users and computers, examining how humans use technology to establish applicable, efficient, and user-centric systems.",
   },
   {
     id: 702,
-    term: "HCI (1970 Emergence)",
+    term: "Usability",
     definition:
-      "Specialization within computer science that originated in 1970 to focus on interfaces between users and computers.",
+      "A core design focus derived from the slogan \"easy to learn and easy to use\".",
   },
   {
     id: 703,
-    term: "Desktop & Mental Models",
+    term: "Ergonomics & Human Factors",
     definition:
-      "HCI milestone (1980–1990) centered on individual computing usability and the philosophy of 'easy to learn, easy to use'.",
+      "The study of people's efficiency in their workplace, addressing physical and cognitive discomfort to maximize productivity.",
   },
   {
     id: 704,
-    term: "Dark Metaphor",
+    term: "Desktop Metaphor",
     definition:
-      "Concept introduced by Apple Macintosh representing the reason why we interact with a computer system.",
+      "A design concept popularized by the Apple Macintosh that uses visual desktop elements to help users interact intuitively with operating systems.",
   },
   {
     id: 705,
-    term: "Desktop Metaphor",
+    term: "Sensation",
     definition:
-      "A design concept popularized by Apple Macintosh that uses visual desktop elements as the basis for how we interact with a computer system.",
+      "The bottom-up process by which sensory organs receive and relay external stimuli.",
   },
   {
     id: 706,
-    term: "Collaboration & Communication (HCI Milestone)",
+    term: "Perception",
     definition:
-      "HCI era (1990–2000) that marked the shift from cognitive models to interactive computing.",
+      "The top-down process by which the brain organizes, interprets, and contextualizes sensory information.",
   },
   {
     id: 707,
-    term: "Electronic Mail (Email)",
+    term: "Cognition",
     definition:
-      "Communication technology that resulted in growing interest in interaction and collaboration, and the growth of informative and organizational computing (1990–2000).",
+      "The mental processes involved in acquiring, processing, and understanding information during daily activities.",
   },
   {
     id: 708,
-    term: "Social Change, Social Expression",
+    term: "Attention",
     definition:
-      "HCI era (2000–2010) focused on self-expression, awareness, reflection (social, emotional, psychological, or business), and the phenomenon of 'alone together'.",
+      "Focusing mental resources on specific environmental stimuli.",
   },
   {
     id: 709,
-    term: "Alone Together",
+    term: "Divided Attention",
     definition:
-      "A concept from the 2000–2010 social expression era describing individuals being physically together while absorbed separately in their technology.",
+      "Processing multiple sources of information simultaneously.",
   },
   {
     id: 710,
-    term: "Ergonomics",
+    term: "Selective Attention",
     definition:
-      "Related to ergonomics and human factors; focuses on people’s efficiency in the workplace.",
+      "Filtering out irrelevant environmental stimuli to focus on a specific input.",
   },
   {
     id: 711,
-    term: "Challenges and Problems in HCI",
+    term: "Change Blindness",
     definition:
-      "Seven key challenges: Human-technology symbiosis, Human-environment interaction, Ethics, privacy and Security, Well-being, health, and eudaimonia, Accessibility and Universal Access, Learning and creativity, and Social organization and democracy.",
+      "The failure to notice a visual difference between a previous state and a current state in a stimulus environment.",
   },
   {
     id: 712,
-    term: "Eudaimonia",
+    term: "Philosophy of Mind",
     definition:
-      "A Greek concept of human flourishing, well-being, and health included among the modern challenges and problems in HCI.",
+      "A branch of philosophy exploring the mind's essence and its relationship to the physical body.",
   },
   {
     id: 713,
-    term: "HCI Theme",
+    term: "Dualism",
     definition:
-      "The core computer theme establishing that people working with computer systems should come first.",
+      "The belief that the mind (cognition/consciousness) and body (physical brain) exist independently (René Descartes, Plato, Aristotle).",
   },
   {
     id: 714,
-    term: "Human Information Processing (Human vs. Computer)",
+    term: "Monism",
     definition:
-      "The fundamental contrast where Human information processing is driven by organic compounds, while Computer information processing is driven by electricity.",
+      "The belief that mind and body are part of a single, unified substance (Spinoza, Parmenides).",
   },
   {
     id: 715,
-    term: "Human (Information Processing Composition)",
+    term: "Computational Theory of Mind (CTM)",
     definition:
-      "In human information processing, humans process information using organic compounds.",
-  },
-  {
-    id: 716,
-    term: "Computer (Information Processing Composition)",
-    definition:
-      "In contrast to human organic compounds, computers process information using electricity.",
+      "The hypothesis that the human mind functions as an information-processing device and consciousness consists of computational processes.",
   },
 
   // ==========================================
-  // II. HUMAN VS. COMPUTER STRENGTHS & WEAKNESSES (PAGE 2)
+  // II. HISTORICAL MILESTONES & KEY TIMELINE
   // ==========================================
   {
-    id: 717,
-    term: "Human Strengths",
+    id: 716,
+    term: "1970s (Emergence)",
     definition:
-      "Core human cognitive advantages: common sense, ability to think outside the box, and rich input from senses.",
+      "HCI began as a specialized niche within computer science before expanding into a multidisciplinary tech community.",
+  },
+  {
+    id: 717,
+    term: "1980s – 1990s (Desktops & Mental Models)",
+    definition:
+      "Focused on individual computing usability and mental models, giving rise to the desktop metaphor.",
   },
   {
     id: 718,
-    term: "Human Weaknesses",
+    term: "1990s – Early 2000s (Collaboration & Communication)",
     definition:
-      "Inherent human processing limitations: takes time to recall information, limited memory capacity, and susceptibility to illness.",
+      "HCI shifted from purely cognitive models to interactive, organizational computing driven by the popularity of Electronic Mail (Email).",
   },
   {
     id: 719,
-    term: "Computer Strengths",
+    term: "Mid-2000s – 2010s (Social Change & Self-Expression)",
     definition:
-      "Key technical capabilities: supports various inputs (mouse, mic, etc.), outputs like speakers, does not sleep, and is not affected by emotions.",
+      "Emphasized value-driven design (social, emotional, business forms) and self-reflection, while confronting the paradox of living \"alone together\" in device-focused social settings.",
   },
   {
     id: 720,
-    term: "Computer Weaknesses",
+    term: "Technology Adoption Lifecycle (Everett Rogers, 1962)",
     definition:
-      "Inherent computational limitations: requires electricity, needs commands to operate, and strictly follows only what is coded.",
+      "A framework categorizing adopters into 5 groups: Innovators, Early Adopters, Early Majority, Late Majority, and Laggards.",
   },
-
-  // ==========================================
-  // III. PHILOSOPHY OF MIND, BRAIN, AND AI (PAGE 2)
-  // ==========================================
   {
     id: 721,
-    term: "Philosophy in Mind",
+    term: "Innovators",
     definition:
-      "Philosophic branch investigating the essence of the mind and its relationship to the physical body.",
+      "The youngest category; first to adopt new technologies.",
   },
   {
     id: 722,
-    term: "Mind-Body Problem",
+    term: "Early Adopters",
     definition:
-      "The central issue in philosophy of mind exploring the relationship between body and mind, and how the non-physical can impact the physical body.",
+      "High community influence and opinion leadership; adopt verified innovations.",
   },
   {
     id: 723,
-    term: "Dualism",
+    term: "Early Majority",
     definition:
-      "The belief in the independent presence of the mind and body (studied by Aristotle, Plato, and by René Descartes in the 17th century, viewing the mind as cognition and conscience-awareness).",
+      "Pragmatic adopters who accept innovations over a standard timeframe.",
   },
   {
     id: 724,
-    term: "Monism",
+    term: "Late Majority",
     definition:
-      "The philosophical position held by Parmenides asserting there is only one substance, meaning mind and body are not existentially different.",
+      "Skeptical adopters who only adopt innovations due to social pressure or necessity.",
   },
   {
     id: 725,
-    term: "Fields Related to Philosophy of Mind",
+    term: "Laggards",
     definition:
-      "Key interdisciplinary fields examining mind and computation: sociobiology, computer science, and artificial intelligence.",
+      "The final group to change; reliant on tradition with no opinion leadership.",
   },
+
+  // ==========================================
+  // III. REASONING AND ARGUMENT
+  // ==========================================
   {
     id: 726,
-    term: "Artificial Intelligence (AI)",
+    term: "Deductive Reasoning",
     definition:
-      "Computer-controlled robot’s or system's ability to carry out tasks; benefited from applied philosophy and encompasses ethics for privacy, security, and regulation.",
+      "Top-down logic; derives specific conclusions from general premises. Evaluated as Valid, Invalid, or Sound.",
   },
   {
     id: 727,
-    term: "Computational Theory of Mind (CTM)",
+    term: "Valid (Deductive)",
     definition:
-      "The core working hypothesis (computationalism) stating that the human mind is an information processing device.",
+      "Inference must be true if premises are true.",
   },
   {
     id: 728,
-    term: "Brain (in Information Processing)",
+    term: "Invalid (Deductive)",
     definition:
-      "Described as an 'enigma' in the study of information processing and philosophy of mind.",
+      "Premises do not logically lead to the conclusion.",
   },
   {
     id: 729,
-    term: "Circuit Boards",
+    term: "Sound (Deductive)",
     definition:
-      "The physical bit of technology in computer information processing systems.",
+      "Premises are factually true AND the argument is valid.",
   },
-
-  // ==========================================
-  // IV. INFORMATION SYSTEM USERS & TECHNOLOGY ADOPTION (PAGE 3)
-  // ==========================================
   {
     id: 730,
-    term: "Information System Users",
+    term: "Deductive Argument Example (Sound)",
     definition:
-      "Make up a great percentage of participants; if users cannot understand and use an information system, it will fail.",
+      "Premise 1: Sarah is 25. Premise 2: Marjorie is 20. Conclusion: Marjorie is younger than Sarah (Sound).",
   },
   {
     id: 731,
-    term: "Technology Adopters (Everett Rogers, 1962)",
+    term: "Inductive Reasoning",
     definition:
-      "Diffusion framework classifying users into 5 groups: Innovators, Early Adopters, Early Majority, Late Majority, and Laggards.",
+      "Bottom-up logic; generalizes conclusions based on specific observations. Evaluated as Strong, Weak, or Cogent.",
   },
   {
     id: 732,
-    term: "Innovators",
+    term: "Strong (Inductive)",
     definition:
-      "The youngest category of technology adopters; the very first to take up an innovation.",
+      "High probability of truth given true premises.",
   },
   {
     id: 733,
-    term: "Early Adopters",
+    term: "Weak (Inductive)",
     definition:
-      "Adopters who adhere to innovations after they have been implemented and verified by innovators.",
+      "Conclusion is uncertain even if premises are true.",
   },
   {
     id: 734,
-    term: "Early Majority",
+    term: "Cogent (Inductive)",
     definition:
-      "Pragmatic adopters who mostly accept an innovation over a standard period.",
+      "Strong argument with factually true premises.",
   },
   {
     id: 735,
-    term: "Late Majority",
+    term: "Inductive Argument Example (Strong)",
     definition:
-      "Adopters who will support an innovation, but with skepticism.",
+      "Premise 1: 95% of students passed. Premise 2: Hyrie is a student. Conclusion: Hyrie probably passed (Strong).",
   },
   {
     id: 736,
-    term: "Laggards",
+    term: "Abductive Reasoning",
     definition:
-      "The last category of users to change; rely heavily on 'traditions'.",
+      "Inference to the best explanation; starts with observations to find the most likely cause. (Evaluated on plausible likelihood).",
+  },
+  {
+    id: 737,
+    term: "Abductive Reasoning Example",
+    definition:
+      "Premise 1: Ken shares a secret. Premise 2: Everyone knows it next week. Conclusion: His friend leaked it.",
   },
 
   // ==========================================
-  // V. PROBLEM SOLVING, PROBLEM SPACE, & GESTALT PRINCIPLES (PAGE 3 & 4)
+  // IV. PROBLEM SPACE & GESTALT THEORY
   // ==========================================
   {
-    id: 737,
-    term: "Problem-Solving vs. Reasoning",
-    definition:
-      "Problem-solving is the process of finding solutions to complex questions, whereas reasoning is objectively thinking of an inference or judgment.",
-  },
-  {
     id: 738,
-    term: "Approaches in Problem Solving",
+    term: "Problem Space Model",
     definition:
-      "Four core approaches: Gestalt, Theory, Problem Space, and Analogy.",
+      "Comprises three functional states used to reach solutions: Initial State, State In-Between, and Goal State.",
   },
   {
     id: 739,
-    term: "Continuation",
+    term: "Initial State",
     definition:
-      "Gestalt principle where the eye moves smoothly from one point to another, like the arrow in the Amazon logo.",
+      "The baseline problem statement in the Problem Space Model (e.g., Loraine has no dress for next week's ball).",
   },
   {
     id: 740,
-    term: "Closure",
+    term: "State In-Between",
     definition:
-      "Gestalt principle where the brain fills in gaps when an object is incomplete, like the WWF panda logo.",
+      "The intermediate procedures and options leading toward a solution (e.g., Deciding where and when to shop).",
   },
   {
     id: 741,
-    term: "Similarity",
+    term: "Goal State",
     definition:
-      "Gestalt principle where patterns or visual elements that look similar to one another are grouped together.",
+      "The successfully resolved outcome in the Problem Space Model (e.g., Loraine has a dress for her ball).",
   },
   {
     id: 742,
-    term: "Proximity",
+    term: "Problem Solving vs. Reasoning",
     definition:
-      "Gestalt principle where objects placed close to each other are perceived as a cohesive group.",
+      "Problem-solving focuses on finding solutions to complex queries, while reasoning is objectively evaluating information to formulate judgments.",
   },
   {
     id: 743,
-    term: "Symmetry",
+    term: "HCI Research Problem Types",
     definition:
-      "Gestalt principle where elements are symmetrical or identical, creating a unified perception like the Starbucks logo.",
+      "Three functional categories of research problems in HCI: Empirical, Conceptual, and Constructive.",
   },
   {
     id: 744,
-    term: "Figure and Ground",
+    term: "Empirical Research Problem (HCI)",
     definition:
-      "Gestalt principle observed when the eyes distinguish focal objects from their surrounding background.",
+      "An HCI research problem focused on direct observation, user studies, and quantitative/qualitative data measurement.",
   },
   {
     id: 745,
-    term: "Problem Space",
+    term: "Conceptual Research Problem (HCI)",
     definition:
-      "Comprises problem states that outline the systematic process of finding a solution: Initial State, State in-between, and Goal State.",
+      "An HCI research problem focused on developing theories, concepts, definitions, and mental models.",
   },
   {
     id: 746,
-    term: "Initial State",
+    term: "Constructive Research Problem (HCI)",
     definition:
-      "The problem statement defining what the problem is all about (e.g., Loraine has no clothes to wear for her graduation ball).",
+      "An HCI research problem focused on producing, engineering, and building new computational tools, systems, or interactive artifacts.",
   },
   {
     id: 747,
-    term: "State in Between (Problem Space)",
+    term: "HCI Solution Evaluation Criteria",
     definition:
-      "The procedures and intermediate actions that lead to a solution (e.g., Where will Loraine buy her clothes? What day will she buy her dress?).",
+      "Five core criteria for evaluating an HCI solution: Significance, Effectiveness, Efficiency, Transfer, and Confidence.",
   },
+
+  // ==========================================
+  // V. GESTALT PRINCIPLES OF VISUAL PERCEPTION
+  // ==========================================
   {
     id: 748,
-    term: "Goal State",
+    term: "Gestalt Theory (Psychology & HCI)",
     definition:
-      "The final resolution to the problem (e.g., Loraine has something to wear on her graduation ball).",
+      "A framework of visual perception based on the fundamental idea that the human mind perceives unified shapes, patterns, or overall structures rather than just a collection of separate individual parts.",
   },
   {
     id: 749,
-    term: "Problem Space Example",
+    term: "Core Concept of Gestalt",
     definition:
-      "Loraine's graduation ball: a. Initial State: Loraine has no clothes to wear; b. State in-between: Where/what day will she buy her dress? c. Goal State: Loraine has something to wear.",
+      "The central premise is often summarized as \"the whole is different from the sum of its parts\"—meaning our brain naturally organizes, connects, and interprets complex visual information into structured visual patterns.",
   },
   {
     id: 750,
-    term: "Analogy",
+    term: "Gestalt Application in Design",
     definition:
-      "Using an analogy or metaphor to solve a problem by transferring solutions between related contexts.",
+      "In HCI and interface design, Gestalt principles (such as Continuation, Closure, Similarity, Proximity, Symmetry, and Figure/Ground) are applied to arrange visual elements so users can naturally interpret layouts, recognize functional groupings, and navigate interfaces with minimal cognitive effort.",
   },
   {
     id: 751,
-    term: "Analogy Problem Solving Steps",
+    term: "Continuation",
     definition:
-      "Three things that must happen: 1. Notice relationship between solutions and analogy; 2. Map between source and target; 3. Apply solution to one problem and the solution to another problem.",
+      "Visual perception is guided along a smooth line or path from one visual element to another (e.g., Amazon logo arrow leading from 'a' to 'z').",
   },
-
-  // ==========================================
-  // VI. TYPES OF REASONING & ARGUMENT STRUCTURES (PAGE 4 & 5)
-  // ==========================================
   {
     id: 752,
-    term: "Types of Reasoning",
+    term: "Closure",
     definition:
-      "Three primary forms of reasoning: Deductive, Inductive, and Abductive.",
+      "The brain automatically fills in missing gaps in an incomplete visual object to perceive a whole shape (e.g., WWF panda logo).",
   },
   {
     id: 753,
-    term: "Deductive Reasoning",
+    term: "Similarity",
     definition:
-      "Top-down method using one or more statements to arrive at a logical conclusion; can be Valid, Invalid, or Sound.",
+      "Elements sharing visual characteristics (color, shape, size) are grouped together (e.g., NBC peacock feathers).",
   },
   {
     id: 754,
-    term: "Valid Argument",
+    term: "Proximity",
     definition:
-      "A deductive argument where the conclusion cannot be false if the statements/premises are true.",
+      "Objects positioned near each other are perceived as a cohesive group (e.g., Individual icons forming Unilever's 'U' logo).",
   },
   {
     id: 755,
-    term: "Valid Argument Example",
+    term: "Symmetry",
     definition:
-      "Premise 1: All dogs can talk. Premise 2: Pomeranian is a dog. Conclusion: Pomeranian can talk (Valid deductive structure).",
+      "Balanced, mirror-image layouts create a unified visual object (e.g., Starbucks logo).",
   },
   {
     id: 756,
-    term: "Invalid Argument",
+    term: "Figure and Ground",
     definition:
-      "A deductive argument where the premises do not lead to the stated conclusion.",
+      "The eye isolates focal shapes (figure) from their surrounding background context (ground). (e.g., Rubin's vase vs. two facing profiles).",
   },
   {
     id: 757,
-    term: "Invalid Argument Example",
+    term: "Amazon Logo (Gestalt Example)",
     definition:
-      "Premise 1: PlayStation is produced by Sony. Premise 2: Xbox is produced by Microsoft. Conclusion: Nintendo Switch is developed by Nintendo (Premises do not lead to conclusion).",
+      "Demonstrates Continuation: The visual arrow guides perception smoothly from 'a' to 'z'.",
   },
   {
     id: 758,
-    term: "Sound Argument",
+    term: "WWF Panda Logo (Gestalt Example)",
     definition:
-      "A deductive argument where the premises are factually true AND validly lead to a correct conclusion.",
+      "Demonstrates Closure: The human brain automatically fills in gaps in the incomplete shapes to perceive a complete panda.",
   },
   {
     id: 759,
-    term: "Sound Argument Example",
+    term: "NBC Peacock Logo (Gestalt Example)",
     definition:
-      "Premise 1: Sarah’s age is 25. Premise 2: Marjorie’s age is 20. Conclusion: Marjorie is younger than Sarah (Sound deductive argument).",
+      "Demonstrates Similarity: Visual feathers sharing the same shape and visual characteristics are perceived as a unified group.",
   },
   {
     id: 760,
-    term: "Inductive Reasoning",
+    term: "Unilever 'U' Logo (Gestalt Example)",
     definition:
-      "Bottom-up approach where premises are generalized through statistical inference (unsure/probabilistic); evaluated as Strong, Weak, or Cogent.",
+      "Demonstrates Proximity: Individual distinct icons placed close together are perceived as one cohesive letter 'U'.",
   },
   {
     id: 761,
-    term: "Strong Argument",
+    term: "Starbucks Logo (Gestalt Example)",
     definition:
-      "An inductive argument where the likelihood of an inference resulting from the assumption constitutes high probability.",
+      "Demonstrates Symmetry: Balanced, mirror-image composition creating a stable, unified visual identity.",
   },
   {
     id: 762,
-    term: "Strong Argument Example",
+    term: "Rubin's Vase (Gestalt Example)",
     definition:
-      "Premise 1: 95% of the students passed the exam. Premise 2: Hyrie is one of the students. Conclusion: Hyrie probably passed the exam (Strong inductive argument).",
+      "Demonstrates Figure and Ground: The visual system toggles between perceiving the central vase as the figure or the two facing profiles.",
   },
+
+  // ==========================================
+  // VI. HUMAN MEMORY (SENSORY, SHORT-TERM, LONG-TERM)
+  // ==========================================
   {
     id: 763,
-    term: "Weak Argument",
+    term: "Multi-Store Memory Model",
     definition:
-      "An inductive argument where even if all statements are true, the conclusion has low or uncertain probability.",
+      "Proposed by Atkinson and Shiffrin (1968): Environmental Input -> Sensory Memory (< 500 ms) -> Attention -> Short-Term Memory (7 ± 2 items for 20–30s) -> Consolidation/Rehearsal <-> Retrieval -> Long-Term Memory. Information can be forgotten at each stage.",
   },
   {
     id: 764,
-    term: "Cogent",
+    term: "Sensory Memory",
     definition:
-      "A strong inductive argument where all the premises are factually true and grounded in real data (like specific time).",
+      "Holds raw sensory stimuli for < 500 ms. Subdivided into Iconic Memory (visual) and Echoic Memory (auditory).",
   },
   {
     id: 765,
-    term: "Cogent Argument Example",
+    term: "Iconic Memory",
     definition:
-      "Premise 1: Hyrie usually eats dinner at 8:30 pm. Premise 2: It is 8:30 pm right now. Conclusion: Hyrie is probably eating her dinner right now (Cogent).",
+      "Visual sensory store holding raw visual stimuli for < 500 ms.",
   },
   {
     id: 766,
-    term: "Abductive Reasoning",
+    term: "Echoic Memory",
     definition:
-      "Starts with a set of observations leading to the conclusion possibly being best explained.",
+      "Auditory sensory store holding raw auditory stimuli for < 500 ms.",
   },
   {
     id: 767,
-    term: "Abductive Reasoning Example",
+    term: "Short-Term Memory (Working Memory)",
     definition:
-      "Premise 1: Ken tells his secret to his friend. Premise 2: By next week, everyone knows the secret. Conclusion: His friend told other people Ken’s secret (Inference to best explanation).",
+      "Scratchpad storing 7 ± 2 items for roughly 20–30 seconds.",
   },
   {
     id: 768,
-    term: "Reasoning Identification Clues (Trick)",
+    term: "Short-Term Memory Enhancement Strategies",
     definition:
-      "Reviewer tips: Uncertainty = Inductive; Direct logic = Deductive; Inference to best explanation ('delulu') = Abductive; Valid = connected premises; Sound = all true; Cogent = real data, uncertain but legit.",
+      "Cognitive strategies to improve working memory retention: Information Chunking (grouping into smaller units), Visualization, Simple Tunes/Rhymes, and Roman Rooms (loci method).",
   },
-
-  // ==========================================
-  // VII. ATTENTION & MEMORY STORES (PAGE 5 & 6)
-  // ==========================================
   {
     id: 769,
-    term: "Attention",
+    term: "Information Chunking",
     definition:
-      "The cognitive process of focusing mental resources on specific stimuli.",
+      "Grouping individual pieces of information into smaller, meaningful units to enhance memory capacity and retention.",
   },
   {
     id: 770,
-    term: "Divided Attention",
+    term: "Roman Rooms (Loci Method)",
     definition:
-      "Focusing cognitive resources on multiple sources of stimuli at once.",
+      "A mnemonic enhancement strategy where items to remember are mentally placed and visualized within specific locations in an imagined room.",
   },
   {
     id: 771,
-    term: "Selective Attention",
+    term: "Long-Term Memory",
     definition:
-      "Choosing certain stimuli to attend to while deliberately ignoring the rest.",
+      "Permanent storage split into explicit (declarative) and implicit (non-declarative) systems.",
   },
   {
     id: 772,
-    term: "Change Blindness",
+    term: "Explicit Memory (Declarative)",
     definition:
-      "Failure to notice a visual change or difference between environmental states.",
+      "Consciously recalled knowledge, divided into Episodic Memory (personal experiences) and Semantic Memory (general facts and concepts).",
   },
   {
     id: 773,
-    term: "Memory",
+    term: "Episodic Memory",
     definition:
-      "The cognitive ability to encode, store, and recall information.",
+      "Personal experiences tied to specific dates and times.",
   },
   {
     id: 774,
-    term: "Sensory Memory",
+    term: "Semantic Memory",
     definition:
-      "Holds sensory information for less than 500 ms directly from sensory organs; includes Iconic and Echoic memory.",
+      "General facts, ideas, and concepts stored without autobiographical context.",
   },
   {
     id: 775,
-    term: "Iconic Memory",
+    term: "Implicit Memory (Non-Declarative)",
     definition:
-      "Visual sensory memory store holding raw visual stimuli for less than 500 ms.",
+      "Unconscious memories that drive procedural skills, habits, and behaviors.",
   },
+
+  // ==========================================
+  // VII. HCI PRINCIPLES, INTERACTION STYLES, & USABILITY FACTORS
+  // ==========================================
   {
     id: 776,
-    term: "Echoic Memory",
+    term: "Command Line (CLI)",
     definition:
-      "Auditory sensory memory store holding raw auditory stimuli for less than 500 ms.",
+      "Key Strengths: High speed, exact execution for power users. Key Weaknesses: Steep learning curve, demands recall over recognition.",
   },
   {
     id: 777,
-    term: "Short-term Memory",
+    term: "Command Line (CLI) Examples",
     definition:
-      "Tactile to short-term working memory where consciousness focuses the mind on one of many opposing ideas.",
+      "Example Good Use: Linux Terminal, PowerShell. Example Bad Use: Beginner desktop apps, cryptic error messages.",
   },
   {
     id: 778,
-    term: "Consciousness (in Short-term Memory)",
+    term: "Menu-Based Interaction",
     definition:
-      "Focus of the mind on one of many opposing ideas within short-term working memory.",
+      "Key Strengths: Leverages recognition, low training required. Key Weaknesses: Screen clutter if overloaded or deeply nested.",
   },
   {
     id: 779,
-    term: "Strategies for Short-term Memory",
+    term: "Menu-Based Examples",
     definition:
-      "Four cognitive memory retention strategies: Information Chunking, Visualization, Simple Tune, and Roman Rooms.",
+      "Example Good Use: ATM screens, mobile navigation bars. Example Bad Use: Over-nested menus, ambiguous icons.",
   },
   {
     id: 780,
-    term: "Information Chunking",
+    term: "Form-Filling Interaction",
     definition:
-      "Short-term memory strategy of grouping individual pieces of information into smaller, manageable chunks.",
+      "Key Strengths: Directs multi-field data entry with step-by-step guidance. Key Weaknesses: User fatigue if forms are excessively long.",
   },
   {
     id: 781,
-    term: "Visualization",
+    term: "Form-Filling Examples",
     definition:
-      "Memory strategy of creating a mental image to enhance retention and recall.",
+      "Example Good Use: E-commerce checkout forms. Example Bad Use: Unstructured, long forms with no progress bars.",
   },
   {
     id: 782,
-    term: "Simple Tune",
+    term: "Graphical User Interface (GUI)",
     definition:
-      "Memory strategy that uses melodies and rhythms to remember information.",
+      "Key Strengths: Visual manipulation via windows, icons, menus, and pointers (WIMP). Key Weaknesses: High visual clutter can trigger change blindness.",
   },
   {
     id: 783,
-    term: "Roman Rooms",
+    term: "GUI Examples",
     definition:
-      "Mnemonic memory strategy of placing items to be remembered in an imagined spatial location (method of loci).",
+      "Example Good Use: macOS, Windows desktops. Example Bad Use: Cluttered toolbars, unlabeled visual icons.",
   },
   {
     id: 784,
-    term: "Long-term Memory",
+    term: "CLI Strengths & Weaknesses",
     definition:
-      "Transfers information from short-term to permanent storage, divided into Explicit Memory (declarative) and Implicit Memory (unconscious, automatic).",
+      "Strengths: High speed and precision for experienced power users. Weaknesses: Demands recall instead of recognition, steep learning curve.",
   },
   {
     id: 785,
-    term: "Explicit Memory",
+    term: "Menu-Based Strengths & Weaknesses",
     definition:
-      "Declarative memory requiring conscious recall; subdivided into Episodic Memory (personal experience) and Semantic Memory (info, image, ideas).",
+      "Strengths: Recognition over recall, requires minimal user training. Weaknesses: Clutter when deeply nested or overcrowded.",
   },
   {
     id: 786,
-    term: "Episodic Memory",
+    term: "Form-Filling Strengths & Weaknesses",
     definition:
-      "Explicit memory subcategory involving the recollection of personal experiences and autobiographical events.",
+      "Strengths: Explicit step-by-step guidance for data entry. Weaknesses: Causes user fatigue if excessively long or unstructured.",
   },
   {
     id: 787,
-    term: "Semantic Memory",
+    term: "GUI Strengths & Weaknesses",
     definition:
-      "Explicit memory subcategory involving the recollection of general information, images, and conceptual ideas.",
-  },
-  {
-    id: 788,
-    term: "Implicit Memory",
-    definition:
-      "Non-declarative, unconscious, and automatic memory that facilitates skills, habits, and procedures.",
-  },
-
-  // ==========================================
-  // VIII. FORGETTING, LEARNING, & RETRIEVAL (PAGE 5 & 6)
-  // ==========================================
-  {
-    id: 789,
-    term: "Why Do We Forget?",
-    definition:
-      "Forgetting occurs primarily through Retrieval Failure and Interference.",
-  },
-  {
-    id: 790,
-    term: "Retrieval Failure",
-    definition:
-      "The inability to retrieve information from memory; explained in part by Decay Theory.",
-  },
-  {
-    id: 791,
-    term: "Decay Theory",
-    definition:
-      "Theory of forgetting stating that memory traces naturally fade and decline over time.",
-  },
-  {
-    id: 792,
-    term: "Interference",
-    definition:
-      "Cause of forgetting where information similar to past memories causes confusion, preventing clear recall.",
-  },
-  {
-    id: 793,
-    term: "Proactive Interference",
-    definition:
-      "Occurs when old information prevents or hinders the retention and recall of new information.",
-  },
-  {
-    id: 794,
-    term: "Retroactive Interference",
-    definition:
-      "Occurs when newly learned information interferes with the retrieval of previously stored old information.",
-  },
-  {
-    id: 795,
-    term: "Atkinson-Shiffrin Model",
-    definition:
-      "Multi-Store Model of human memory consisting of three structural stores: Sensory, Short-term, and Long-term.",
-  },
-  {
-    id: 796,
-    term: "Multi-Store Model",
-    definition:
-      "The three-tier memory architecture (Atkinson-Shiffrin): Sensory Memory, Short-term Memory, and Long-term Memory.",
-  },
-  {
-    id: 797,
-    term: "Learning",
-    definition:
-      "A continuous process of acquiring knowledge and behavior through experience, interaction, and communication.",
-  },
-  {
-    id: 798,
-    term: "Tips for Improving Learning/Storage Process",
-    definition:
-      "10 strategies: 1. Basic Memory Techniques; 2. Don’t Stop Learning; 3. Acquire Diverse Ways to Learn; 4. Share your Knowledge; 5. Understand, Don’t Memorize; 6. Relate and Connect; 7. Experience is the Key; 8. Search for Answers; 9. No to Multitasking; 10. Identify What’s Best for You.",
-  },
-  {
-    id: 799,
-    term: "Forgetting",
-    definition:
-      "Disremembering; the failure to recall information stored within the brain.",
-  },
-  {
-    id: 800,
-    term: "Retrieval/Access Failure Theory",
-    definition:
-      "Theory stating that information remains stored in the brain but is difficult to access without appropriate retrieval cues.",
-  },
-  {
-    id: 801,
-    term: "Retrieval Cues",
-    definition:
-      "Internal and external stimuli that assist in accessing and retrieving information stored in the brain.",
-  },
-  {
-    id: 802,
-    term: "Information Retrieval",
-    definition:
-      "Accessing stored knowledge from little details to big chunks of information.",
-  },
-  {
-    id: 803,
-    term: "Accessible Information",
-    definition:
-      "Information that is successfully retrieved from memory, representing a small portion of stored knowledge.",
-  },
-  {
-    id: 804,
-    term: "Forms of Memory Retrieval",
-    definition:
-      "Two primary forms of memory retrieval: Recall (retrieving information) and Recognition (identifying known information).",
-  },
-  {
-    id: 805,
-    term: "To Improve Recall",
-    definition:
-      "Three methods to improve recall: Association (linking new info), Categorization (organizing info), and Visualization (mental image).",
-  },
-  {
-    id: 806,
-    term: "Association (Memory Recall)",
-    definition:
-      "Method to improve recall by linking new information to existing knowledge.",
-  },
-  {
-    id: 807,
-    term: "Categorization (Memory Recall)",
-    definition:
-      "Method to improve recall by organizing information into structured categories.",
-  },
-
-  // ==========================================
-  // IX. TYPES OF INTERACTION / DIALOG STYLES (PAGE 6 & 7)
-  // ==========================================
-  {
-    id: 808,
-    term: "Interaction Styles (Dialog Styles)",
-    definition:
-      "Four major interaction styles: Command Line, Menus, Form-filling, and Graphical User Interfaces (GUIs).",
-  },
-  {
-    id: 809,
-    term: "Command Line",
-    definition:
-      "Interaction style where users enter commands which the system executes; the human role is controlling the computer.",
-  },
-  {
-    id: 810,
-    term: "CLI Good Examples",
-    definition:
-      "Effective command line implementations: Linux Terminal and Windows Command Prompt / PowerShell.",
-  },
-  {
-    id: 811,
-    term: "CLI Bad Examples",
-    definition:
-      "Poor command line practices: command-only systems designed for beginners, and systems displaying unclear or cryptic error messages.",
-  },
-  {
-    id: 812,
-    term: "Menus",
-    definition:
-      "Simple and visual interaction style to organize actions using options or icons with labels requiring minimal learning.",
-  },
-  {
-    id: 813,
-    term: "Menu-Based Good Examples",
-    definition:
-      "Effective menu interaction implementations: ATM menus and mobile app navigation menus.",
-  },
-  {
-    id: 814,
-    term: "Menu-Based Bad Examples",
-    definition:
-      "Poor menu interaction practices: too many menu options, or poorly labeled and deeply nested menus.",
-  },
-  {
-    id: 815,
-    term: "Form-filling",
-    definition:
-      "Interaction style where users provide information by entering data into designated input fields.",
-  },
-  {
-    id: 816,
-    term: "Form-Filling Good Examples",
-    definition:
-      "Effective form-filling implementations: online registration forms and checkout forms in shopping apps.",
-  },
-  {
-    id: 817,
-    term: "Form-Filling Bad Examples",
-    definition:
-      "Poor form-filling practices: very long forms with no progress indicator, and missing instructions or error feedback.",
-  },
-  {
-    id: 818,
-    term: "Graphical User Interface (GUI)",
-    definition:
-      "Interaction style where users interact through visual elements such as windows, icons, buttons, and menus.",
-  },
-  {
-    id: 819,
-    term: "GUI Good Examples",
-    definition:
-      "Effective graphical interface implementations: Windows desktops, macOS desktops, and well-designed mobile applications.",
-  },
-  {
-    id: 820,
-    term: "GUI Bad Examples",
-    definition:
-      "Poor graphical interface practices: cluttered screens and icons displayed without labels.",
+      "Strengths: Intuitive direct manipulation with visual feedback (WIMP). Weaknesses: Visual clutter can easily trigger change blindness.",
   },
 ];
