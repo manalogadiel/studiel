@@ -5,6 +5,7 @@ import { qmChapter1V2Cards } from "./qmChapter1V2Cards";
 import { mobileComputingCards } from "./mobileComputingCards";
 import { automataTheoryCards } from "./automataTheoryCards";
 import { it321Cards } from "./it321Cards";
+import { it321ReviewerCards } from "./it321ReviewerCards";
 
 export type Flashcard = {
   id: number;
@@ -29,6 +30,7 @@ export {
   mobileComputingCards,
   automataTheoryCards,
   it321Cards,
+  it321ReviewerCards,
 };
 
 export const envCards: Flashcard[] = [
@@ -173,9 +175,17 @@ export const DEFAULT_SUBJECTS: Subject[] = [
     id: "it-321",
     name: "IT 321 – Human Computer Interaction",
     code: "IT 321",
-    description: "BatStateU CICS - Complete 7-Page Reviewer: Key Terms, Milestones, Philosophy of Mind, Reasoning & Arguments, Problem Space, Gestalt Principles, Memory Models, and Interaction Styles.",
+    description: "BatStateU CICS - Key Terminology, Historical Milestones, Reasoning, Problem Space, Gestalt Principles, Human Memory, and Interaction Styles.",
     isCustom: false,
     cards: it321Cards,
+  },
+  {
+    id: "it-321-reviewer",
+    name: "IT 321 – HCI (Lecture Reviewer)",
+    code: "IT 321-R",
+    description: "7-Page Reviewer: Key Terms, Milestones, Philosophy of Mind, Reasoning & Arguments, Problem Space, Gestalt Principles, Memory Models, and Interaction Styles.",
+    isCustom: false,
+    cards: it321ReviewerCards,
   },
   {
     id: "qm-gurus",
@@ -235,14 +245,15 @@ export const DEFAULT_SUBJECTS: Subject[] = [
   },
 ];
 
-const STORAGE_KEY = "studiel_subjects_v7";
-const ACTIVE_KEY = "studiel_active_subject_id_v7";
+const STORAGE_KEY = "studiel_subjects_v8";
+const ACTIVE_KEY = "studiel_active_subject_id_v8";
 
 export function loadStoredSubjects(): Subject[] {
   if (typeof window === "undefined") return DEFAULT_SUBJECTS;
   try {
     const raw =
       localStorage.getItem(STORAGE_KEY) ||
+      localStorage.getItem("studiel_subjects_v7") ||
       localStorage.getItem("studiel_subjects_v6") ||
       localStorage.getItem("studiel_subjects_v5") ||
       localStorage.getItem("studiel_subjects_v4") ||
@@ -275,6 +286,7 @@ export function getActiveSubjectId(available: Subject[]): string {
   try {
     const saved =
       localStorage.getItem(ACTIVE_KEY) ||
+      localStorage.getItem("studiel_active_subject_id_v7") ||
       localStorage.getItem("studiel_active_subject_id_v6") ||
       localStorage.getItem("studiel_active_subject_id_v5") ||
       localStorage.getItem("studiel_active_subject_id_v4") ||

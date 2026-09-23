@@ -7,6 +7,7 @@ export {
   qmChapter1Cards,
   qmChapter1V2Cards,
   it321Cards,
+  it321ReviewerCards,
   envCards,
   mobileComputingCards,
   automataTheoryCards,
