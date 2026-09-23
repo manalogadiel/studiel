@@ -173,7 +173,7 @@ export const DEFAULT_SUBJECTS: Subject[] = [
     id: "it-321",
     name: "IT 321 – Human Computer Interaction",
     code: "IT 321",
-    description: "BatStateU CICS - Key Terminology, Historical Milestones, Reasoning, Problem Space, Gestalt Principles, Human Memory, and Interaction Styles.",
+    description: "BatStateU CICS - Complete 7-Page Reviewer: Key Terms, Milestones, Philosophy of Mind, Reasoning & Arguments, Problem Space, Gestalt Principles, Memory Models, and Interaction Styles.",
     isCustom: false,
     cards: it321Cards,
   },
@@ -235,14 +235,15 @@ export const DEFAULT_SUBJECTS: Subject[] = [
   },
 ];
 
-const STORAGE_KEY = "studiel_subjects_v6";
-const ACTIVE_KEY = "studiel_active_subject_id_v6";
+const STORAGE_KEY = "studiel_subjects_v7";
+const ACTIVE_KEY = "studiel_active_subject_id_v7";
 
 export function loadStoredSubjects(): Subject[] {
   if (typeof window === "undefined") return DEFAULT_SUBJECTS;
   try {
     const raw =
       localStorage.getItem(STORAGE_KEY) ||
+      localStorage.getItem("studiel_subjects_v6") ||
       localStorage.getItem("studiel_subjects_v5") ||
       localStorage.getItem("studiel_subjects_v4") ||
       localStorage.getItem("studiel_subjects_v3") ||
@@ -274,6 +275,7 @@ export function getActiveSubjectId(available: Subject[]): string {
   try {
     const saved =
       localStorage.getItem(ACTIVE_KEY) ||
+      localStorage.getItem("studiel_active_subject_id_v6") ||
       localStorage.getItem("studiel_active_subject_id_v5") ||
       localStorage.getItem("studiel_active_subject_id_v4") ||
       localStorage.getItem("studiel_active_subject_id_v3") ||
